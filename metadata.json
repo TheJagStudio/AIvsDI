@@ -1,0 +1,7 @@
+{
+  "name": "AI vs DI - The Eternal Debate",
+  "description": "A live voice agent debate platform exploring the convergence of Artificial Intelligence and Divine Intelligence.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
