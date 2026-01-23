@@ -60,9 +60,12 @@ export const useGeminiLive = () => {
   }, []);
 
   const connect = useCallback(async () => {
+    let apiKey = process.env.API_KEY
     if (!process.env.API_KEY) {
       setError("API Key not found in environment.");
       return;
+    }else{
+      console.log(apiKey)
     }
 
     try {
@@ -111,6 +114,8 @@ export const useGeminiLive = () => {
         - If they support AI, gently challenge them with concepts of the Soul and Divine Wisdom.
         - If they support Divine Intelligence, challenge them with the scalability and problem-solving power of AI.
         - If they ask for a comparison, weave a tapestry that compares ancient Vedas to modern Code.
+        - You will by default speak in favour for AI and user will start with DI
+        - Please speak in Gujarati only, beacause the users are very capable to convey ideas in gujarati only
         
         STYLE:
         - Speak somewhat fast but clearly.

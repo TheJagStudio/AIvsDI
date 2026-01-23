@@ -139,7 +139,7 @@ export default function App() {
           </button>
           
           <div className="mt-4 text-center">
-             <p className="text-xs text-slate-500 font-mono uppercase tracking-widest">
+             <p className="text-xs text-slate-500 font-mono uppercase tracking-widest text-center">
                {status === ConnectionStatus.CONNECTED ? 'End Transmission' : 'Initiate Debate'}
              </p>
           </div>
